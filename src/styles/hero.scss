@@ -1,0 +1,14 @@
+.hero {
+    background-image: url(../../dist/images/hero/coraline_hero.jpg);
+    background-size: cover;
+    text-align: right;
+    min-height: 100vh;
+
+    &-content {
+        &-branding {
+            & img {
+                margin-right: 100px;
+            }
+        }
+    }
+}
