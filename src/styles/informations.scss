@@ -1,0 +1,55 @@
+@use "variables";
+
+@mixin absolute() {
+    text-align: center;
+    position: absolute;
+    top: 110px;
+
+    p {
+        margin-top: 25px
+    }
+
+    h2 {
+        color: variables.$corDeTextoSecundaria;
+    }
+}
+
+.informations {
+    padding: 5.6vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    &-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 100px;
+
+        &-item {
+            &-image {
+                position: relative;
+
+                img {
+                    width: 400px;
+                }
+
+                &-content-what {
+                    @include absolute;
+                    right: 60px;
+                }
+
+                &-content-book {
+                    @include absolute;
+                    right: 40px;
+                }
+
+                &-content-film {
+                    @include absolute;
+                    right: 58px;
+                }
+            }
+        }
+    }
+}

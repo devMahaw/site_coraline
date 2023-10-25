@@ -1,11 +1,11 @@
 @use "hero";
 @use "variables";
+@use "informations";
 
-@mixin text($fontSize: 16px) {
+@mixin text($fontSize: 18px) {
     font-size: $fontSize;
     line-height: $fontSize + 10px;
     color: variables.$corDeTexto;
-    letter-spacing: 8px;
 }
 
 @mixin title($fontSize: 40px) {
