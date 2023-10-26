@@ -1,6 +1,7 @@
 @use "hero";
 @use "variables";
 @use "informations";
+@use "characters";
 
 @mixin text($fontSize: 18px) {
     font-size: $fontSize;
@@ -10,7 +11,7 @@
 
 @mixin title($fontSize: 40px) {
     @include text($fontSize);
-    color: variables.$corDeTexto;
+    color: variables.$corDeTextoSecundaria;
 }
 
 .text {

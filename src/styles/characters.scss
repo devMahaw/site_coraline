@@ -1,0 +1,65 @@
+@use "variables";
+
+.characters {
+    &-title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    
+    &-slider {
+        input {
+            display: none;
+        }
+
+        &-slides {      
+            &-content {
+                display: none;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                
+                &-item {
+                    img {
+                        width: 400px;
+                        height: 400px;
+                        object-fit: contain;
+                        margin-right: 50px;
+                    }
+                    
+                    p {
+                        margin-top: 25px;
+                        max-width: 600px;
+                    }
+                }
+            }
+
+            .is-active {
+                display: flex;
+            }
+        }
+    }
+
+    &-navigation {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-btn {
+            border: 2px solid variables.$corDeTexto;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
+
+            &:hover {
+                background-color: variables.$corDeTexto;
+            }
+        }
+    }
+}
