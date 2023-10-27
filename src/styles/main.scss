@@ -2,6 +2,7 @@
 @use "variables";
 @use "informations";
 @use "characters";
+@use "synopsis";
 
 @mixin text($fontSize: 18px) {
     font-size: $fontSize;

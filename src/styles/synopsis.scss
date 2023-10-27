@@ -1,0 +1,18 @@
+.synopsis {
+    margin-top: 700px;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 1000px;
+    }
+
+    &-content {
+        text-align: center;
+        max-width: 600px;
+
+        p {
+            margin-top: 25px;
+        }
+    }
+}
