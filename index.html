@@ -52,15 +52,15 @@
         <section class = "characters">
             <h2 class = "title characters-title" style = "font-size: 60px;">Personagens</h2>
             <div class = "characters-slider">
-                <input data-tab-id = radio1 type = "radio" name = "radio" id = "radio1">
-                <input data-tab-id = radio2 type = "radio" name = "radio" id = "radio2">
-                <input data-tab-id = radio3 type = "radio" name = "radio" id = "radio3">
-                <input data-tab-id = radio4 type = "radio" name = "radio" id = "radio4">
-                <input data-tab-id = radio5 type = "radio" name = "radio" id = "radio5">
-                <input data-tab-id = radio6 type = "radio" name = "radio" id = "radio6">
-                <input data-tab-id = radio7 type = "radio" name = "radio" id = "radio7">
                 <div class = "characters-slider-slides">
-                    <ul class = "characters-slider-slides-content is-active">
+                    <input type = "radio" class = "characters-slider-slides-radio" name = "slides" id = "radio1" checked>
+                    <input type = "radio" class = "characters-slider-slides-radio" name = "slides" id = "radio2">
+                    <input type = "radio" class = "characters-slider-slides-radio" name = "slides" id = "radio3">
+                    <input type = "radio" class = "characters-slider-slides-radio" name = "slides" id = "radio4">
+                    <input type = "radio" class = "characters-slider-slides-radio" name = "slides" id = "radio5">
+                    <input type = "radio" class = "characters-slider-slides-radio" name = "slides" id = "radio6">
+                    <input type = "radio" class = "characters-slider-slides-radio" name = "slides" id = "radio7">
+                    <ul class = "characters-slider-slides-content" id = "slide1">
                         <li class = "characters-slider-slides-content-item">
                             <img src = "dist/images/characters/coraline_transparent.png" alt = "Coraline">
                         </li>
@@ -69,7 +69,7 @@
                             <p class = "text">A jovem exploradora. Ela é curiosa, inteligente, engenhosa e corajosa. Coraline é muitas vezes irritada pela chuva, adultos loucos (como todos parecem ser), e não sendo levada a sério por causa de sua idade jovem. Ela é descrita como sendo "pequena para sua idade", mas Coraline não tem medo de enfrentar ninguém; ela é a pessoa mais aventureira.</p>
                         </li>
                     </ul>
-                    <ul class = "characters-slider-slides-content">
+                    <ul class = "characters-slider-slides-content" id = "slide2">
                         <li class = "characters-slider-slides-content-item">
                             <img src = "dist/images/characters/coraline_mom_transparent.png" alt = "Mãe da Coraline">
                         </li>
@@ -78,7 +78,7 @@
                             <p class = "text">A mãe de Coraline. Ela está muito ocupada na maioria das vezes, e às vezes é um pouco desatenta, mas ela ama e se importa com Coraline. Ela é legal e útil, embora Coraline a considere muito chata. Coraline também fica irritada com sua mãe real, porque ela não parece querer deixar Coraline "encaixar". No filme, seu primeiro nome é Mel.</p>
                         </li>
                     </ul>
-                    <ul class = "characters-slider-slides-content">
+                    <ul class = "characters-slider-slides-content" id = "slide3">
                         <li class = "characters-slider-slides-content-item">
                             <img src = "dist/images/characters/coraline_dad_transparent.png" alt = "Pai da Coraline">
                         </li>
@@ -87,7 +87,7 @@
                             <p class = "text">Pai de Coraline. Ele trabalha em sua casa no computador. Ele se preocupa muito com Coraline e é gentil, corajoso e útil. Ele faz criações de alimentos interessantes que Coraline não gosta fortemente. Ele também está ocupado demais para passar tempo com Coraline. No filme, seu primeiro nome é Charlie.</p>
                         </li>
                     </ul>
-                    <ul class = "characters-slider-slides-content">
+                    <ul class = "characters-slider-slides-content" id = "slide4">
                         <li class = "characters-slider-slides-content-item">
                             <img src = "dist/images/characters/cat_transparent.jpeg" alt = "Gato Coraline">
                         </li>
@@ -96,7 +96,7 @@
                             <p class = "text">Um gato preto do mundo de Coraline. O gato age como mentor de Coraline e guia-a durante a jornada. Ele afirma ter nenhum nome, explicando que os gatos não precisam de nomes para distinguir uns aos outros. Ao contrário de muitos dos personagens da novela, não tem uma contraparte "Outro Mundo", dizendo que, ao contrário de outras criaturas do mundo, os gatos podem "manter-se juntos".</p>
                         </li>
                     </ul>
-                    <ul class = "characters-slider-slides-content">
+                    <ul class = "characters-slider-slides-content" id = "slide5">
                         <li class = "characters-slider-slides-content-item">
                             <img src = "dist/images/characters/beldam_transparent.jpeg" alt = "Beldam">
                         </li>
@@ -105,7 +105,7 @@
                             <p class = "text">Durante o curso do romance, a outra mãe cresce mais alta, mais fina e pálida, parecendo cada vez menos com a mãe de Coraline. Ela não pode criar, mas apenas copiar, torcer e mudar as coisas do mundo real ao construir sua versão dela. Ela coleciona crianças, a quem ela adora possessivamente até a eventual destruição. Ela quer principalmente alguém para ser mãe.</p>
                         </li>
                     </ul>
-                    <ul class = "characters-slider-slides-content">
+                    <ul class = "characters-slider-slides-content" id = "slide6">
                         <li class = "characters-slider-slides-content-item">
                             <img src = "dist/images/characters/other_mom_transparent.jpeg" alt = "Outra mãe">
                         </li>
@@ -114,7 +114,7 @@
                             <p class = "text">A criatura que criou muito do Outro Mundo e o principal vilão da novela. Parece semelhante à mãe real de Coraline, mas mais alta e mais fina, com longos cabelos pretos que parecem se mover por si mesmos, olhos com botão preto, pele branca de papel e dedos extremamente longos e trêmulos com longas unhas vermelhas escuras.</p>
                         </li>
                     </ul>
-                    <ul class = "characters-slider-slides-content">
+                    <ul class = "characters-slider-slides-content" id = "slide7">
                         <li class = "characters-slider-slides-content-item">
                             <img src = "dist/images/characters/wybie_transparent.png" alt = "Wybie">
                         </li>
@@ -124,15 +124,15 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class = "characters-navigation">
-                <label for = "radio1" class = "characters-navigation-btn"></label>
-                <label for = "radio2" class = "characters-navigation-btn"></label>
-                <label for = "radio3" class = "characters-navigation-btn"></label>
-                <label for = "radio4" class = "characters-navigation-btn"></label>
-                <label for = "radio5" class = "characters-navigation-btn"></label>
-                <label for = "radio6" class = "characters-navigation-btn"></label>
-                <label for = "radio7" class = "characters-navigation-btn"></label>
+                <div class = "characters-slider-dots">
+                    <label for = "radio1" id = "label1"></label>
+                    <label for = "radio2" id = "label2"></label>
+                    <label for = "radio3" id = "label3"></label>
+                    <label for = "radio4" id = "label4"></label>
+                    <label for = "radio5" id = "label5"></label>
+                    <label for = "radio6" id = "label6"></label>
+                    <label for = "radio7" id = "label7"></label>
+                </div>
             </div>
         </section>
     </main>

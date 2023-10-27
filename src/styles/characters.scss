@@ -1,6 +1,10 @@
 @use "variables";
 
 .characters {
+    position: relative;
+    max-width: 880px;
+    margin: 5% auto;
+    
     &-title {
         display: flex;
         justify-content: center;
@@ -8,16 +12,27 @@
     }
     
     &-slider {
-        input {
-            display: none;
-        }
-
+        width: 100%;
+        position: absolute;
+        height: 0;
+        padding-top: 56.25%;
+        overflow: hidden;
+        
         &-slides {      
-            &-content {
+            &-radio {
                 display: none;
+            }
+
+            &-content {
+                display: flex;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0; left: 0;
+                opacity: 0;
                 
                 &-item {
                     img {
@@ -25,41 +40,88 @@
                         height: 400px;
                         object-fit: contain;
                         margin-right: 50px;
+                        transform: scale(1);
+                        transition: 1.3s;
                     }
                     
+                    h2 {
+                        transform: scale(1);
+                        transition: 1.3s;
+                    }
+
                     p {
                         margin-top: 25px;
                         max-width: 600px;
+                        transform: scale(0.9);
+                        transition: 1.3s;
                     }
                 }
             }
+        }
 
-            .is-active {
-                display: flex;
+        &-dots {
+            width: 100%;
+            position: absolute;
+            bottom: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & label {
+                border: 2px solid variables.$corDeTexto;
+                padding: 5px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: 0.5s;
+
+                &:not(:last-child) {
+                    margin-right: 40px;
+                }
+
+                &:hover {
+                    background-color: variables.$corDeTexto;
+                }
             }
         }
-    }
 
-    &-navigation {
-        margin-top: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        #radio1:checked ~ #slide1,
+        #radio2:checked ~ #slide2,
+        #radio3:checked ~ #slide3,
+        #radio4:checked ~ #slide4,
+        #radio5:checked ~ #slide5,
+        #radio6:checked ~ #slide6,
+        #radio7:checked ~ #slide7 {
+            opacity: 1;
+        }
 
-        &-btn {
-            border: 2px solid variables.$corDeTexto;
-            padding: 5px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: 0.5s;
+        #radio1:checked ~ #slide1 img,
+        #radio2:checked ~ #slide2 img,
+        #radio3:checked ~ #slide3 img,
+        #radio4:checked ~ #slide4 img,
+        #radio5:checked ~ #slide5 img,
+        #radio6:checked ~ #slide6 img,
+        #radio7:checked ~ #slide7 img {
+            transform: scale(1.1);
+        }
 
-            &:not(:last-child) {
-                margin-right: 40px;
-            }
+        #radio1:checked ~ #slide1 h2,
+        #radio2:checked ~ #slide2 h2,
+        #radio3:checked ~ #slide3 h2,
+        #radio4:checked ~ #slide4 h2,
+        #radio5:checked ~ #slide5 h2,
+        #radio6:checked ~ #slide6 h2,
+        #radio7:checked ~ #slide7 h2 {
+            transform: scale(1.1);
+        }
 
-            &:hover {
-                background-color: variables.$corDeTexto;
-            }
+        #radio1:checked ~ #slide1 p,
+        #radio2:checked ~ #slide2 p,
+        #radio3:checked ~ #slide3 p,
+        #radio4:checked ~ #slide4 p,
+        #radio5:checked ~ #slide5 p,
+        #radio6:checked ~ #slide6 p,
+        #radio7:checked ~ #slide7 p {
+            transform: scale(1);
         }
     }
 }
