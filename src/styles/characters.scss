@@ -125,3 +125,29 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .characters {
+        &-slider {
+            padding-top: 220%;
+
+            &-slides {
+                &-content {
+                    display: block;
+
+                    &-item {
+                        img {
+                            margin: 40px 0px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            max-width: 300px;
+                            margin-left: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

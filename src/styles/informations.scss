@@ -43,3 +43,25 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .informations {
+        &-list {
+            display: block;
+
+            &-item {
+                &-content-what {
+                    right: 40px;
+                }
+
+                &-content-book {
+                    right: 40px;
+                }
+    
+                &-content-film {
+                    right: 40px;
+                }
+            }
+        }
+    }
+}

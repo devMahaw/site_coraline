@@ -16,3 +16,18 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .hero {
+        background-image: url(../../dist/images/hero/coraline_hero_mobile.jpg);
+
+        &-content {
+            &-branding {
+                img {
+                    margin-top: 180px;
+                    width: 400px;
+                }
+            }
+        }
+    }
+}

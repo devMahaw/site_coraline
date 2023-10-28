@@ -21,4 +21,25 @@
             }
         }
     }
+}
+
+@media (max-width: 767px) {
+    .synopsis {
+        display: block;
+
+        &-container {
+            display: block;
+            margin-top: 1100px;
+
+            img {
+                width: 430px;
+            }
+
+            &-content {
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
     }
+}
