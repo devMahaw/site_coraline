@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const coraline = document.querySelector(".coraline");
     const wybie = document.querySelector(".wybie");
     const cat = document.querySelector(".cat");
+    
     const min = 1
     const max = 3
 
